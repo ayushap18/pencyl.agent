@@ -1,30 +1,31 @@
 # Pencyl
 
-Pencyl is a browser-based design-agent workspace for turning product ideas into editable interfaces. This repository contains a polished, dependency-free MVP inspired by modern collaborative design tools.
+Pencyl is a dependency-free, local design-workspace prototype. It demonstrates a canvas, document layers, an inspector, responsive preview, and a request composer.
 
-## Features
+## What is real in this build
 
-- Prompt-driven design-agent input with suggestion starters
-- Editable canvas workspace with layers, inspector controls, tokens, and responsive preview
-- Prototype preview mode
-- Publish and command-menu interactions
-- Responsive layout for desktop and mobile
+- The interface is static HTML, CSS, and browser JavaScript.
+- Layer selection, preview mode, local status messages, and request entry work in the browser.
+- Requests are recorded only in the current page session.
+
+## What is deliberately not claimed
+
+- There is no connected AI model or generation API.
+- There is no account, identity provider, database, analytics service, or publishing backend.
+- The example project, workspace, copy, and abstract visual are authored prototype data.
+- No customer names, customer logos, or third-party assets are included.
+
+## Provenance
+
+The implementation and sample content in this repository were authored for this prototype. They are not copied from a third-party design product or represented as sourced customer material. Replace the example content with verified source material before using the interface for a real project.
 
 ## Run locally
-
-No build step is required. Open `index.html` directly in a browser, or serve the folder with any static server:
 
 ```bash
 python3 -m http.server 4173
 ```
 
-Then visit <http://localhost:4173>.
-
-## Structure
-
-- `index.html` — application markup
-- `styles.css` — visual system and responsive layout
-- `app.js` — lightweight interactions
+Open <http://localhost:4173>.
 
 ## License
 
